@@ -1,0 +1,238 @@
+<html>
+<head>
+<style>
+div.full {
+  width: 100%;
+  border: 1px solid #4CAF50;
+}
+div.half {
+  width: 50%;
+  border: 1px solid #4CAF50;
+}
+div.quarter {
+  width: 25%;
+  border: 1px solid #4CAF50;
+}
+p.ex1 {
+  max-height: 75px;
+  overflow: auto;
+  
+}
+p.ex2 {
+  max-width: 150px;
+}
+div.ex1 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: scroll;
+}
+
+div.ex2 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+div.ex3 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+}
+
+div.ex4 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: visible;
+}
+div.pad {
+  border: 1px solid black;
+  background-color: cyan;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+p.one {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+  border-color: green;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: blue;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+  border-color: cyan;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+  border-color: orange;
+}
+
+p.six {
+  border-style: outset;
+  border-width: thick;
+  border-color: lightblue;
+}
+p.normal {
+  border: 2px solid;
+  border-color: lightblue;
+}
+
+p.round1 {
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: lightgreen;
+}
+
+p.round2 {
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: pink;
+}
+
+p.round3 {
+  border: 2px solid;
+  border-radius: 12px;
+  border-color: lightyellow;
+}
+p {outline-color:purple;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+div.margin {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+h2.a {
+  visibility: visible;
+}
+
+h2.b {
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS width property</h2>
+<div class="full">I'm so handsome.(100%)</div>
+<div class="half">I'm so handsome.(50%)</div>
+<div class="quarter">I'm so handsome.(25%)</div>
+<br />
+<a href="https://www.w3schools.com/css/css_dimension.asp">width and height</a>
+<hr />
+<h1>The max-height Property</h1>
+
+<h2>max-height: none (default):</h2>
+<p>I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</p>
+
+<h2>max-height: 75px:</h2>
+<p class="ex1">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</p>
+<h2>max-width: 150px:</h2>
+<p class="ex2">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</p>
+<a href="https://www.w3schools.com/cssref/pr_dim_max-height.asp">max-height</a>
+<br />
+<a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp">max-width</a>
+<hr />
+
+<h1>The overflow Property</h1>
+
+<h2>overflow: scroll:</h2>
+<div class="ex1">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+
+<h2>overflow: hidden:</h2>
+<div class="ex2">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+
+<h2>overflow: auto:</h2>
+<div class="ex3">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+
+<h2>overflow: visible (default):</h2>
+<div class="ex4">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+<br /><br /><br /><br /><br />
+<a href="https://www.w3schools.com/cssref/pr_pos_overflow.asp">overflow</a>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><hr />
+
+<h2>Using individual padding properties</h2>
+<div class="pad">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+<br />
+<a href="https://www.w3schools.com/css/css_padding.asp">padding</a>
+<hr />
+<h2>The border-width Property</h2>
+
+<p class="one">I'm so handsome.</p>
+<p class="two">I'm so handsome.</p>
+<p class="three">I'm so handsome.</p>
+<p class="four">I'm so handsome.</p>
+<p class="five">I'm so handsome.</p>
+<p class="six">I'm so handsome.</p>
+<br />
+<a href="https://www.w3schools.com/css/css_border.asp">borders</a>
+<a href="https://www.w3schools.com/css/css_border_width.asp">border width</a>
+<a href="https://www.w3schools.com/css/css_border_color.asp">border color</a>
+<hr />
+<h2>The border-radius Property</h2>
+
+<p class="normal">I'm so handsome.</p>
+<p class="round1">I'm so handsome.</p>
+<p class="round2">I'm so handsome.</p>
+<p class="round3">I'm so handsome.</p>
+<br />
+<a href="https://www.w3schools.com/css/css_border_rounded.asp">border rounded</a>
+<hr />
+<h2>The outline-style Property</h2>
+
+<p class="dotted">I'm so handsome.</p>
+<p class="dashed">I'm so handsome.</p>
+<p class="solid">I'm so handsome.</p>
+<p class="double">I'm so handsome.</p>
+<p class="groove">I'm so handsome(A groove outline).</p>
+<p class="ridge">I'm so handsome(A ridge outline).</p>
+<p class="inset">I'm so handsome(An inset outline).</p>
+<p class="outset">I'm so handsome(An outset outline).</p>
+<br />
+<a href="https://www.w3schools.com/css/css_outline.asp">outline</a>
+<hr />
+<h2>Using individual margin properties</h2>
+
+<div class="margin">I'm a handsome boy that everyone knows.However, people always ask me how do I let my face to maintain handsome. And I just said please remember that you belong to you, no one can replace it, don't care too much about what others say. you have to make your own decisions! Be your own master!</div>
+
+<br />
+<a href="https://www.w3schools.com/css/css_margin.asp">margin</a>
+<hr />
+<h1>The visibility Property</h1>
+
+<h2 class="a">I'm so handsome.</h2>
+
+<h2 class="b">Actually, my appearance is ordinary XDDDDDDDD.</h2>
+
+<p>Notice that the hidden heading still takes up space on the page.</p>
+</body>
+</html>
