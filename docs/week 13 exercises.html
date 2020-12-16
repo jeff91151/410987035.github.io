@@ -1,1 +1,674 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+ol.d {list-style-type: armenian;}
+ol.e {list-style-type: cjk-ideographic;}
+ol.f {list-style-type: decimal;}
+ol.g {list-style-type: decimal-leading-zero;}
+ol.h {list-style-type: georgian;}
+ol.i {list-style-type: hebrew;}
+ol.j {list-style-type: hiragana;}
+ol.k {list-style-type: hiragana-iroha;}
+ol.l {list-style-type: katakana;}
+ol.m {list-style-type: katakana-iroha;}
+ol.n {list-style-type: lower-alpha;}
+ol.o {list-style-type: lower-greek;}
+ol.p {list-style-type: lower-latin;}
+ol.q {list-style-type: lower-roman;}
+ol.r {list-style-type: upper-alpha;}
+ol.s {list-style-type: upper-greek;}
+ol.t {list-style-type: upper-latin;}
+ol.u {list-style-type: upper-roman;}
+ol.v {list-style-type: none;}
+ol.w {list-style-type: inherit;}
+pl {
+  list-style: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+ki { 
+  padding-left: 16px; 
+}
+
+ki::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+cl {
+  list-style-image: url('sqpurple.gif');
+}
+
+al {
+  ;
+  padding: 20px;
+}
+
+dl {
+  background: #3399ff;
+  padding: 20px;
+}
+
+al li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+dl li {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+table, tb, ta {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ta, tb {
+  padding: 15px;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(odd) {background-color: lightgreen;}
+tr:nth-child(even) {background-color: green;}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
+table, td, th {
+  border: 1px solid black;
+}
+
+#table1 {
+  border-collapse: separate;
+}
+
+#table2 {
+  border-collapse: collapse;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>The list-style-type Property</h1>
+
+<ul class="a">
+  <li>Circle type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Disc type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="c">
+  <li>Square type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ol class="d">
+  <li>Armenian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="e">
+  <li>Cjk-ideographic type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="f">
+  <li>Decimal type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="g">
+  <li>Decimal-leading-zero type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="h">
+  <li>Georgian type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="i">
+  <li>Hebrew type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="j">
+  <li>Hiragana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="k">
+  <li>Hiragana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="l">
+  <li>Katakana type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="m">
+  <li>Katakana-iroha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="n">
+  <li>Lower-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="o">
+  <li>Lower-greek type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="p">
+  <li>Lower-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="q">
+  <li>Lower-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="r">
+  <li>Upper-alpha type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="s">
+  <li>Upper-greek type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="t">
+  <li>Upper-latin type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="u">
+  <li>Upper-roman type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="v">
+  <li>None type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="w">
+  <li>inherit type</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<br />
+<a href="https://www.w3schools.com/cssref/pr_list-style-type.asp">list-style-type</a>
+<hr />
+<h1>The content Property</h1>
+
+<pl>
+  <ki>Coffee</ki>
+  <br />
+  <ki>Tea</ki>
+  <br />
+  <ki>Coca Cola</ki>
+</pl>
+<br />
+<br />
+<a href="https://www.w3schools.com/cssref/pr_list-style-type.asp">list-style-type</a>
+<hr />
+<h2>CSS Lists</h2>
+<p>The list-style-image property specifies an image as the list item marker:</p>
+
+<cl>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</cl>
+
+
+<br />
+
+<a href="https://www.w3schools.com/css/css_list.asp">list CSS styles</a>
+<hr />
+<h1>Styling Lists With Colors:</h1>
+
+<al>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</al>
+<br />
+<dl>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</dl>
+
+
+<a href="https://www.w3schools.com/css/css_list.asp">list-style</a>
+<hr />
+<h2>Add a border to a table:</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+  
+</table>
+<br />
+<p>code : table, th, td {
+  border: 1px solid black;
+}
+
+</p>
+<br />
+<a href="https://www.w3schools.com/css/css_table.asp">table styling</a>
+<hr />
+<h2>The vertical-align Property</h2>
+<p>This property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.</p>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+<br />
+<p>code : 
+<br />
+table, td, th {
+  border: 1px solid black;
+}
+<br />
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+<br />
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+</p>
+<br />
+<a href="https://www.w3schools.com/css/css_table_align.asp">table align</a>
+<hr />
+<h2>The padding Property</h2>
+<p>This property adds space between the border and the content in a table.</p>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+<br />
+<p>
+<br />
+code : table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+<br />
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+<br />
+th, td {
+  padding: 15px;
+}</p>
+ <br />
+<a href="https://www.w3schools.com/css/css_table_align.asp">table align</a>
+<hr />
+<h2>Colored Table Header</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table>
+
+<p>code : 
+<br />
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+<br />
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+<br />
+tr:nth-child(even){background-color: lightgrey}
+<br />
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</p>
+<br />
+<a href="https://www.w3schools.com/css/css_table_style.asp">table style</a>
+<hr />
+
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+<p>code : 
+<br />table {
+  border-collapse: collapse;
+  width: 100%;
+}
+<br />
+th, td {
+  text-align: left;
+  padding: 8px;
+}<br />
+tr:nth-child(odd) {background-color: lightgreen;}
+tr:nth-child(even) {background-color: green;}
+</p>
+<br />
+<a href="https://www.w3schools.com/css/css_table_style.asp">table style</a>
+<hr />
+<h2>Hoverable Table</h2>
+<p>Move the mouse over the table rows to see the effect.</p>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+<p>table {
+  border-collapse: collapse;
+  width: 100%;
+}
+<br />
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+<br />
+tr:hover {background-color:#f5f5f5;}</p>
+<br />
+<a href="https://www.w3schools.com/css/css_table_style.asp">table style</a>
+<hr />
+<h2>border-collapse: separate (default):</h2>
+<table id="table1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>border-collapse: collapse:</h2>
+<table id="table2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+<p>code:
+<br />table, td, th {
+  border: 1px solid black;
+}
+<br />
+#table1 {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+<br />
+#table2 {
+  border-collapse: collapse;
+  border-spacing: 10px;  
+}
+</p>
+<br />
+<a href="https://www.w3schools.com/cssref/pr_border-collapse.asp">border spacing</a>
+<hr />
+</body>
+</html>
