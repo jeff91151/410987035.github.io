@@ -1,0 +1,112 @@
+<html>
+<head>
+<style>
+body  {
+  background-image: url("paper.gif");
+  background-color: #cccccc;
+}
+img {border: solid black 1px;}
+img.large { width: 500px; height: 500px;}
+img.medium { width: 250px; height: 250px;}
+img.small { width: 50px; height: 50px;}
+
+img.align-left { float: left; margin-right: 10px;}
+img.align-right { float: right; margin-left: 10px;}
+img.imgsize { height: 150px;}
+
+img.align-center { display: block; margin: auto;}
+img.imgsize { width: 250px; height: 250px;}
+
+body {
+  background-image: url("paper.gif");
+  background-repeat: repeat-y;
+}
+
+p1 {
+  background-image: url("https://mdn.mozillademos.org/files/12057/starsolid.gif");
+  background-attachment: fixed;
+}
+
+body { 
+  background-image: url('https://media.giphy.com/media/3ofT5xJtfXgV2aqOyI/giphy.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+#grad2 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow, green);
+}
+</style>
+</head>
+<body>
+<h1>1. set image size with CSS rules</h1>
+<img src="images/calibri.png" class="large" alt="calibri" />
+<img src="images/calibri.png" class="medium" alt="calibri" />
+<img src="images/calibri.png" class="small" alt="calibri" />
+<br />
+<hr />
+<h1>2. set right image algnment with float property</h1>
+<p><img src="images/pineapple.jpg" alt="Pineapple" class="align-left imgsize">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+<p><img src="images/pineapple.jpg" alt="Pineapple" class="align-right imgsize">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr />
+<h1>3. put an image in the horizontal center of the webpage</h1>
+<p><img src="images/pineapple.jpg" alt="Pineapple" class="align-center imgsize">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+<br />
+<a href="https://www.w3schools.com/cssref/pr_class_display.asp">display property</a>
+<br />
+<hr />
+<h1>4. use an image as background of an HTML element</h1>
+<p>Look the background!!</p>
+<br />
+<hr />
+<h1>5. use background-repeat property</h1>
+<p>Here, the background image is repeated only vertically.</p>
+<br />
+<a href="https://www.w3schools.com/cssref/pr_background-repeat.asp">background repeat</a>
+<hr />
+
+<h1>6. use background-attachment property</h1>
+<p1>Look the sentence. This is background attachment.</p1>
+<br />
+<hr />
+<h1>7. set background position</h1>
+<p>Here, the background image will be positioned in the center of the element, using percent.</p>
+<p>That's betterrrrrrrrrrrrrrrrrrrrrrr1!<p/>
+<a href="https://www.w3schools.com/cssref/pr_background-position.asp">background-attachment property</a>
+<br />
+<hr />
+<h1>8. use linear-gradient</h1>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad1"></div>
+<br />
+<a href="https://www.w3schools.com/css/css3_gradients.asp">gradient</a>
+<hr />
+
+<h1>9. use radial gradient</h1>
+<div id="grad2"></div>
+<br />
+<a href="https://www.w3schools.com/css/css3_gradients_radial.asp">radial gradient</a>
+<hr />
+</body>
+</html>
