@@ -1,19 +1,91 @@
-<html>
-	<head>
-		<style>
-body {
-  background-color: rgb(230, 255, 219);<!--Change the color of background-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  margin: auto;
+  width: 80%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
 </style>
-		<title>Jeff's secret</title>
-	</head>
-	<body>
-		<a href="https://jeff91151.github.io/"“_blank”>Home(opens in new window)</a>
-		<br />
-		<a href="https://jeff91151.github.io/">Home</a>
-		<h1><b><strong><font color="#cc0055">Jeff's secret</font><br></strong></b></h1>
-		<h2><i>My school</i></h2>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-size:5vw;">Jeff's secret</h1>
+  <p>motto: I can do all things through Christ who strengthens me.Philippians 4:13</p>
+</div>
+
+<div class="topnav">
+ 		<a href="https://jeff91151.github.io/">Home</a>
+		<a href="https://jeff91151.github.io/week 10 exercises.html">week 10 exercises.html</a>
+		
+		<a href="https://jeff91151.github.io/week 11 exercises.html">week 11 exercises.html</a>    
+		
+		<a href="https://jeff91151.github.io/week 13 exercises.html">week 13 exercises.html</a>    
+		
+		<a href="https://jeff91151.github.io/week 14 exercises.html">week 14 exercises.html</a>  
+		
+</div>
+
+<div class="row">
+  <div class="column">
+<h2><i>My school</i></h2>
 <img
 	src="images/logo_ntpu.jpg"
 	alt="NTPU logo"
@@ -125,5 +197,8 @@ controls autoplay>
 	</tfoot>
 </table>
 
-	</body>
+  </div>
+</div>
+
+</body>
 </html>
